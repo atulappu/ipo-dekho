@@ -1,0 +1,51 @@
+package com.example.ipotracker.data.remote.dto
+
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
+
+@JsonClass(generateAdapter = true)
+data class IpoDto(
+    @Json(name = "id") val id: String? = null,
+    @Json(name = "name") val name: String? = null,
+    @Json(name = "symbol") val symbol: String? = null,
+    @Json(name = "category") val category: String? = null,
+    @Json(name = "status") val status: String? = null,
+    @Json(name = "price_band_min") val priceBandMin: Double? = null,
+    @Json(name = "price_band_max") val priceBandMax: Double? = null,
+    @Json(name = "lot_size") val lotSize: Int? = null,
+    @Json(name = "min_investment") val minInvestment: Double? = null,
+    @Json(name = "issue_size_cr") val issueSizeCr: Double? = null,
+    @Json(name = "fresh_issue_cr") val freshIssueCr: Double? = null,
+    @Json(name = "ofs_cr") val ofsCr: Double? = null,
+    @Json(name = "open_date") val openDate: String? = null,
+    @Json(name = "close_date") val closeDate: String? = null,
+    @Json(name = "allotment_date") val allotmentDate: String? = null,
+    @Json(name = "listing_date") val listingDate: String? = null,
+    @Json(name = "current_gmp") val currentGmp: Double? = null,
+    @Json(name = "estimated_listing_price") val estimatedListingPrice: Double? = null,
+    @Json(name = "estimated_gain_percent") val estimatedGainPercent: Double? = null,
+    @Json(name = "last_gmp_updated") val lastGmpUpdated: String? = null,
+    @Json(name = "current_subscription_times") val currentSubscriptionTimes: Double? = null,
+    @Json(name = "qib_times") val qibTimes: Double? = null,
+    @Json(name = "nii_times") val niiTimes: Double? = null,
+    @Json(name = "retail_times") val retailTimes: Double? = null,
+    @Json(name = "listing_price") val listingPrice: Double? = null,
+    @Json(name = "listing_gain_percent") val listingGainPercent: Double? = null,
+    @Json(name = "current_market_price") val currentMarketPrice: Double? = null,
+    @Json(name = "current_return_percent") val currentReturnPercent: Double? = null,
+    @Json(name = "description") val description: String? = null,
+    @Json(name = "sector") val sector: String? = null,
+    @Json(name = "listing_exchanges") val listingExchanges: String? = null,
+    @Json(name = "face_value") val faceValue: Double? = null,
+    @Json(name = "lead_managers") val leadManagers: String? = null,
+    @Json(name = "registrar") val registrar: String? = null,
+    @Json(name = "promoter_holding_pre") val promoterHoldingPre: Double? = null,
+    @Json(name = "promoter_holding_post") val promoterHoldingPost: Double? = null,
+    @Json(name = "objects_of_issue") val objectsOfIssue: List<String>? = null,
+    @Json(name = "subscription_details") val subscriptionDetails: SubscriptionDetailsDto? = null,
+    @Json(name = "gmp_history") val gmpHistory: List<GmpHistoryItemDto>? = null,
+    @Json(name = "financials") val financials: List<FinancialYearDataDto>? = null,
+    @Json(name = "important_dates") val importantDates: List<ImportantDateItemDto>? = null,
+    @Json(name = "allotment_info") val allotmentInfo: AllotmentInfoDto? = null,
+    @Json(name = "analysis_report") val analysisReport: AnalysisReportDto? = null
+)

@@ -1,0 +1,6 @@
+{
+  "name": "IPODekho",
+  "description": "Track. Compare. Understand IPOs. Professional Indian IPO tracking, subscription status, GMP, allotment checker, and financial analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
